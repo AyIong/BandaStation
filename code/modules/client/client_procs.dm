@@ -392,9 +392,9 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 
 	// Initialize stat panel
 	stat_panel.initialize(
-		inline_html = file("html/statbrowser.html"),
-		inline_js = file("html/statbrowser.js"),
-		inline_css = file("html/statbrowser.css"),
+		inline_html = file("html/stat-panel/statbrowser.html"),
+		inline_js = file("html/stat-panel/statbrowser.js"),
+		inline_css = file("html/stat-panel/statbrowser.css"),
 	)
 	addtimer(CALLBACK(src, PROC_REF(check_panel_loaded)), 30 SECONDS)
 
